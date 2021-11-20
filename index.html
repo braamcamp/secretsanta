@@ -27,9 +27,10 @@
             }
 
             body {
-                background-image: url(assets/santa.jpg);
-                background-position: bottom right;
+                background-image: url(assets/santa.png);
+                background-position: center right;
                 background-repeat: no-repeat;
+                background-size: 30%;
 
                 font-family: 'Comic Sans MS';
             }
@@ -152,7 +153,7 @@
 
         <div class="main">
 
-            <div class="part" style="overflow-y: auto">
+           <!-- <div class="part" style="overflow-y: auto">
                 <div class="instructions">
                     <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Secret Santa Generator</h1>
                     <p>No signup, no email, no bullshit. Just a straightforward <a href="https://github.com/arcanis/secretsanta">open-source</a> tool to help you generate your secret santa pairings. One static page, and that's it.</p>
@@ -161,32 +162,28 @@
                     <p>I wanted to make a Secret Santa over Facebook without having to reveal to anyone my guests email addresses (so nothing that would require a backend). I also wanted not to know who was paired with me, so I had to find a way to somehow obfuscate the information. And being a developer, well, my first thought was "Let's AES it, for fun and profits!". Classic.</p>
                 </div>
             </div>
-
+-->
             <form id="form" class="part">
                 <textarea id="input" class="input" autofocus></textarea>
-                <button type="submit" class="generate">Generate your pairings</button>
+                <button type="submit" class="generate">Gerar pares</button>
                 <div id="result" class="result none"></div>
             </form>
 
         </div>
 
         <script id="input-placeholder" type="text/placeholder">
-            # You can add a user by adding a line
+            # Podes adicionar um nome por linha
             Santa
 
-            # You can add some details if you want to, using parentheses after the name
-            Nicholas (the elf)
+            # Se quiseres podes colocar a alcunha em parêntesis, depois do nome
+            Rodolfo (a rena)
 
-            # You can prevent someone from being paired with someone else
-            Maël !Aurélie
-            Aurélie !Maël
+            # Podes evitar que alguém seja emparelhado com outro usando um "!" antes do nome
+            Santa !Cruz
+            Cruz !Santa
 
-            # You can also exclude someone from being paired with multiple people
-            # Careful: too many exclusion rules can make your secret santa less interesting!
-            Rudolph !Santa !Nicholas (the elf)
-
-            # You can also cheat a bit and force someone to be paired with another
-            Nicholas (the saint) =Nicholas (the elf)
+            # Podes forçar que algumas pessoas fiquem juntas
+            Santa = Rodolfo (a rena)
 
             ...
         </script>
