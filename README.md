@@ -1,6 +1,6 @@
 # Secret Santa
 
-Check it live on [braamcamp.github.io/secretsanta/](http://arcanis.github.io/secretsanta/).
+Check it live on [braamcamp.github.io/secretsanta/](http://braamcamp.github.io/secretsanta/).
 
 ## License (MIT)
 
